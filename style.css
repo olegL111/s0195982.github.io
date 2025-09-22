@@ -198,3 +198,10 @@ body {
         font-size: 1.3rem;
     }
 }
+
+<style>
+.marked-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+</style>
