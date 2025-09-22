@@ -37,3 +37,164 @@ body {
     align-items: center;
     gap: 15px;
 }
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+#site-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Навигационное меню */
+#main-nav {
+    background: #34495e;
+    width: 100%;
+    border-bottom: 3px solid #2980b9;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu li {
+    margin: 0;
+}
+
+.nav-menu a {
+    display: block;
+    padding: 15px 25px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.nav-menu a:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+}
+
+/* Основной контент */
+#content {
+    background: white;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+#content h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+/* Таблица */
+#tech-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.9rem;
+}
+
+#tech-table th {
+    background: #34495e;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+}
+
+#tech-table td {
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+}
+
+/* Четные строки */
+#tech-table tr.even {
+    background-color: #f8f9fa;
+}
+
+/* Нечетные строкы */
+#tech-table tr.odd {
+    background-color: #ffffff;
+}
+
+#tech-table tr:hover {
+    background-color: #e3f2fd;
+    transition: background-color 0.3s ease;
+}
+
+/* Подвал сайта */
+#site-footer {
+    background: #2c3e50;
+    color: white;
+    padding: 30px 0;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.footer-content p {
+    margin: 5px 0;
+    opacity: 0.9;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    #site-title {
+        font-size: 1.5rem;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+    
+    #tech-table {
+        font-size: 0.8rem;
+    }
+    
+    #tech-table th,
+    #tech-table td {
+        padding: 8px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    #tech-table {
+        display: block;
+        overflow-x: auto;
+    }
+    
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+    
+    #site-title {
+        font-size: 1.3rem;
+    }
+}
