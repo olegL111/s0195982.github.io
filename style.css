@@ -82,6 +82,11 @@ body {
     transform: translateY(-2px);
 }
 
+.marked-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
 /* Основной контент */
 #content {
     background: white;
@@ -198,10 +203,3 @@ body {
         font-size: 1.3rem;
     }
 }
-
-<style>
-.marked-list {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-</style>
