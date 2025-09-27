@@ -107,13 +107,14 @@ body {
 }
 
 #form {
-	order: 1;
+	order: 3;
 }
 
 #tech-table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
+	order: 1
 }
 
 #tech-table th {
