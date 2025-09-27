@@ -102,6 +102,10 @@ body {
     border-radius: 8px;
 }
 
+#table{
+	order:1
+}
+
 #list-refs{
 	order: 2;
 }
@@ -114,7 +118,6 @@ body {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
-	order: 1
 }
 
 #tech-table th {
