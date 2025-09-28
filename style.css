@@ -1,3 +1,53 @@
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.links-section {
+    order: 1;
+}
+
+.table-section {
+    order: 2;
+}
+
+.form-section {
+    order: 3;
+}
+
+/* Медиа-запрос для смартфонов */
+@media (max-width: 768px) {
+    .content-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .table-section {
+        order: 1;
+    }
+    
+    .links-section {
+        order: 2;
+    }
+    
+    .form-section {
+        order: 3;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+    
+    #tech-table {
+        font-size: 0.8rem;
+    }
+    
+    .marked-list,
+    .numbered-list {
+        padding-left: 20px !important;
+    }
+}
+
 .marked-list {
     list-style-type: disc !important;
     padding-left: 40px !important;
