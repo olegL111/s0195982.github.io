@@ -3,175 +3,269 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>title</title>
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header id="site-header">
+    <header class="bg-dark text-white py-3">
         <div class="container">
-            <div class="header-content">
-                <div class="logo-section">
-                    <img src="image.png" alt="Логотип" class="logo">
-                    <h1 id="site-title">Title</h1>
-                </div>
+            <div class="d-flex align-items-center">
+                <img src="image.png" alt="Логотип" class="logo me-3">
+                <h1 class="h4 mb-0">Title</h1>
             </div>
         </div>
     </header>
 
-    <nav id="main-nav">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container">
-            <ul class="nav-menu">
-                <li><a href="#home">Главная</a></li>
-                <li><a href="#products">Ссылка 2</a></li>
-                <li><a href="#services">Ссылка 3</a></li>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#home">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#products">Ссылка 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Ссылка 3</a>
+                </li>
             </ul>
         </div>
     </nav>
 
-    <main class="container">
-        <div class="content-wrapper">
-            <section class="links-section">
-                <h2>Список ссылок</h2>
-                <ul class="marked-list">
-                    <li><a href="http://kubsu.ru/">КубГУ</a></li>
-                    <li><a href="https://kubsu.ru/">КубГУ</a></li>
-                    <li><a href="http://kubsu.ru/"><img src="image.jpg" alt="Цветок" width="600"></a></li>
-                    <li><a href="/s0195982.github.io/copy2.html">Сокращенная на внутреннюю</a></li>
-                    <li><a href="/s0195982.github.io">Сокращенная на главную</a></li>
-                    <li><a href="#:~:text=%D0%9A%D1%83%D0%B1%D0%93%D0%A3-,%D0%9A%D1%83%D0%B1%D0%93%D0%A3,-%D0%A1%D0%BE%D0%BA%D1%80%D0%B0%D1%87%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F%20%D0%BD%D0%B0%20%D0%B2%D0%BD%D1%83%D1%82%D1%80%D0%B5%D0%BD%D0%BD%D1%8E%D1%8E">ссылку на фрагмент текущей страницы</a></li>
-                    <li><a href="https://www.kubsu.ru/ru/studlist?hfashfjsd=1&hhjfh=2&fjdklfjdl=3">Ссылка с 3 параметрами</a></li>
-                    <li><a href="https://www.kubsu.ru/ru/rangedlist?id=12345">Ссылка с id</a></li>
-                    <li><a href="https://github.com/olegL111/s0195982.github.io/blob/main/image.jpg">относительную на страницу в текущем каталоге</a></li>
-                    <li><a href="https://github.com/olegL111/s0195982.github.io/blob/main/about">относительную на страницу в каталоге about</a></li>
-                    <li><a href="https://github.com/olegL111/s0195982.github.io/blob/main/dir/file1">относительную на страницу в каталоге уровнем выше текущего</a></li>
-                    <li><a href="https://github.com/olegL111/s0195982.github.io/blob/main/dir/file2/file3">относительную на страницу в каталоге двумя уровнями выше</a></li>
-                    <li>Контекстная <a href="https://kubsu.ru">ссылка</a> в тексте абзаца</li>
-                    <li><a href="https://ru.wiktionary.org/wiki/%D0%BE%D0%B4%D1%83%D0%B2%D0%B0%D0%BD%D1%87%D0%B8%D0%BA#:~:text=%5B%C9%90d%CA%8A%CB%88van%CA%B2t%CD%A1%C9%95%C9%AAk%CA%B2%C9%AA%5D-,%D0%A1%D0%B5%D0%BC%D0%B0%D0%BD%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%20%D1%81%D0%B2%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%B0,-%D0%BE%D0%B4%D1%83%D0%B2%D0%B0%D0%BD%D1%87%D0%B8%D0%BA%5B1%5D">ссылку на фрагмент страницы стороннего сайта</a></li>
-                    <li><a href="https://github.com/olegL111/s0195982.github.io/blob/main/dir/file2/file3">ссылки из прямоугольных и круглых областей картинки (HTML-тег map)</a></li>
-                    <li><a href="">ссылку с пустым href;</a></li>
-                    <li><a>ссылку с пустым href;</a></li>
-                    <li><a href="https://kubsu.ru" rel="nofollow">ссылку, по которой запрещен переход поисковикам;</a></li>
-                    <li><a href="https://kubsu.ru" rel="noindex">запрещенную для индексации поисковиками</a></li>
-                    <li><a href="ftp://moodle.kubsu.ru/pluginfile.php/70681/mod_assign/introattachment/0/2.zip?forcedownload=1">Скачать файл с FTP</a></li>
-                </ul>
+    <main class="container my-4">
+        <div class="row g-4">
+            <div class="col-12 order-1 order-md-2">
+                <section class="card shadow-sm">
+                    <div class="card-body">
+                        <h2 class="card-title h4 mb-4">Таблица</h2>
+                        <div class="table-responsive">
+                            <table class="table table-striped table-hover">
+                                <thead class="table-dark">
+                                    <tr>
+                                        <th>Колонка 1</th>
+                                        <th>Колонка 2</th>
+                                        <th>Колонка 3</th>
+                                        <th>Колонка 4</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Ячейка11</td>
+                                        <td>Ячейка12</td>
+                                        <td>Ячейка13</td>
+                                        <td>Ячейка14</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ячейка21</td>
+                                        <td>Ячейка22</td>
+                                        <td>Ячейка23</td>
+                                        <td>Ячейка24</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ячейка31</td>
+                                        <td>Ячейка32</td>
+                                        <td colspan="2">Ячейка33</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">Ячейка41</td>
+                                        <td>Ячейка42</td>
+                                        <td>Ячейка43</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ячейка51</td>
+                                        <td>Ячейка52</td>
+                                        <td>Ячейка53</td>
+                                        <td>Ячейка54</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ячейка61</td>
+                                        <td colspan="3">Ячейка62</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+            </div>
 
-                <h2>Нумерованный список</h2>
-                <p>Нумерованный список ссылок с подписями title:</p>
-                <ol class="numbered-list">
-                    <li><a href="https://ru.wikipedia.org/wiki/Всемирная_паутина" title="Первая ссылка">Первая ссылка</a></li>
-                    <li><a href="https://ru.wikipedia.org/wiki/HTML" title="Вторая ссылка">Вторая ссылка</a></li>
-                    <li><a href="https://ru.wikipedia.org/wiki/CSS" title="Третья ссылка">Третья ссылка</a></li>
-                </ol>
-            </section>
+            <div class="col-12 order-2 order-md-1">
+                <section class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title h4 mb-4">Список ссылок</h2>
+                        <ul class="ms-3">
+                            <li class="mb-2"><a href="http://kubsu.ru/" class="text-decoration-none">КубГУ</a></li>
+                            <li class="mb-2"><a href="https://kubsu.ru/" class="text-decoration-none">КубГУ</a></li>
+                            <li class="mb-2">
+                                <a href="http://kubsu.ru/" class="text-decoration-none">
+                                    <img src="image.jpg" alt="Цветок" class="img-fluid" style="max-width: 600px;">
+                                </a>
+                            </li>
+                            <li class="mb-2"><a href="/s0195982.github.io/copy2.html" class="text-decoration-none">Сокращенная на внутреннюю</a></li>
+                            <li class="mb-2"><a href="/s0195982.github.io" class="text-decoration-none">Сокращенная на главную</a></li>
+                            <li class="mb-2"><a href="#:~:text=%D0%9A%D1%83%D0%B1%D0%93%D0%A3-,%D0%9A%D1%83%D0%B1%D0%93%D0%A3,-%D0%A1%D0%BE%D0%BA%D1%80%D0%B0%D1%87%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F%20%D0%BD%D0%B0%20%D0%B2%D0%BD%D1%83%D1%82%D1%80%D0%B5%D0%BD%D0%BD%D1%8E%D1%8E" class="text-decoration-none">ссылку на фрагмент текущей страницы</a></li>
+                            <li class="mb-2"><a href="https://www.kubsu.ru/ru/studlist?hfashfjsd=1&hhjfh=2&fjdklfjdl=3" class="text-decoration-none">Ссылка с 3 параметрами</a></li>
+                            <li class="mb-2"><a href="https://www.kubsu.ru/ru/rangedlist?id=12345" class="text-decoration-none">Ссылка с id</a></li>
+                            <li class="mb-2"><a href="https://github.com/olegL111/s0195982.github.io/blob/main/image.jpg" class="text-decoration-none">относительную на страницу в текущем каталоге</a></li>
+                            <li class="mb-2"><a href="https://github.com/olegL111/s0195982.github.io/blob/main/about" class="text-decoration-none">относительную на страницу в каталоге about</a></li>
+                            <li class="mb-2"><a href="https://github.com/olegL111/s0195982.github.io/blob/main/dir/file1" class="text-decoration-none">относительную на страницу в каталоге уровнем выше текущего</a></li>
+                            <li class="mb-2"><a href="https://github.com/olegL111/s0195982.github.io/blob/main/dir/file2/file3" class="text-decoration-none">относительную на страницу в каталоге двумя уровнями выше</a></li>
+                            <li class="mb-2">Контекстная <a href="https://kubsu.ru" class="text-decoration-none">ссылка</a> в тексте абзаца</li>
+                            <li class="mb-2"><a href="https://ru.wiktionary.org/wiki/%D0%BE%D0%B4%D1%83%D0%B2%D0%B0%D0%BD%D1%87%D0%B8%D0%BA#:~:text=%5B%C9%90d%CA%8A%CB%88van%CA%B2t%CD%A1%C9%95%C9%AAk%CA%B2%C9%AA%5D-,%D0%A1%D0%B5%D0%BC%D0%B0%D0%BD%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%20%D1%81%D0%B2%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%B0,-%D0%BE%D0%B4%D1%83%D0%B2%D0%B0%D0%BD%D1%87%D0%B8%D0%BA%5B1%5D" class="text-decoration-none">ссылку на фрагмент страницы стороннего сайта</a></li>
+                            <li class="mb-2"><a href="https://github.com/olegL111/s0195982.github.io/blob/main/dir/file2/file3" class="text-decoration-none">ссылки из прямоугольных и круглых областей картинки (HTML-тег map)</a></li>
+                            <li class="mb-2"><a href="" class="text-decoration-none">ссылку с пустым href;</a></li>
+                            <li class="mb-2"><a class="text-decoration-none">ссылку с пустым href;</a></li>
+                            <li class="mb-2"><a href="https://kubsu.ru" rel="nofollow" class="text-decoration-none">ссылку, по которой запрещен переход поисковикам;</a></li>
+                            <li class="mb-2"><a href="https://kubsu.ru" rel="noindex" class="text-decoration-none">запрещенную для индексации поисковиками</a></li>
+                            <li class="mb-2"><a href="ftp://moodle.kubsu.ru/pluginfile.php/70681/mod_assign/introattachment/0/2.zip?forcedownload=1" class="text-decoration-none">Скачать файл с FTP</a></li>
+                        </ul>
+                    </div>
+                </section>
 
-            <section class="table-section">
-                <h2>Таблица</h2>
-                <table id="tech-table">
-                    <thead>
-                        <tr>
-                            <th>Колонка 1</th>
-                            <th>Колонка 2</th>
-                            <th>Колонка 3</th>
-                            <th>Колонка 4</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="even">
-                            <td>Ячейка11</td>
-                            <td>Ячейка12</td>
-                            <td>Ячейка13</td>
-                            <td>Ячейка14</td>
-                        </tr>
-                        <tr class="odd">
-                            <td>Ячейка21</td>
-                            <td>Ячейка22</td>
-                            <td>Ячейка23</td>
-                            <td>Ячейка24</td>
-                        </tr>
-                        <tr class="even">
-                            <td>Ячейка31</td>
-                            <td>Ячейка32</td>
-                            <td colspan="2">Ячейка33</td>
-                        </tr>
-                        <tr class="odd">
-                            <td colspan="2">Ячейка41</td>
-                            <td>Ячейка42</td>
-                            <td>Ячейка43</td>
-                        </tr>
-                        <tr class="even">
-                            <td>Ячейка51</td>
-                            <td>Ячейка52</td>
-                            <td>Ячейка53</td>
-                            <td>Ячейка54</td>
-                        </tr>
-                        <tr class="odd">
-                            <td>Ячейка61</td>
-                            <td colspan="3">Ячейка62</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
+                <section class="card shadow-sm">
+                    <div class="card-body">
+                        <h2 class="card-title h4 mb-4">Нумерованный список</h2>
+                        <p>Нумерованный список ссылок с подписями title:</p>
+                        <ol class="list-group list-group-numbered">
+                            <li class="list-group-item">
+                                <a href="https://ru.wikipedia.org/wiki/Всемирная_паутина" title="Первая ссылка" class="text-decoration-none">Первая ссылка</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="https://ru.wikipedia.org/wiki/HTML" title="Вторая ссылка" class="text-decoration-none">Вторая ссылка</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="https://ru.wikipedia.org/wiki/CSS" title="Третья ссылка" class="text-decoration-none">Третья ссылка</a>
+                            </li>
+                        </ol>
+                    </div>
+                </section>
+            </div>
 
-            <section class="form-section">
-                <h2>Форма</h2>
-                <form>
-                    <label>
-                        ФИО:<br />
-                        <input name="field-name-1" placeholder="Введите ФИО" />
-                    </label><br />
+            <div class="col-12 order-3">
+                <section class="card shadow-sm">
+                    <div class="card-body">
+                        <h2 class="card-title h4 mb-4">Форма</h2>
+                        <form>
+                            <div class="mb-3">
+                                <label class="form-label">ФИО:</label>
+                                <input type="text" class="form-control" name="field-name-1" placeholder="Введите ФИО">
+                            </div>
 
-                    <label>
-                        Телефон:<br />
-                        <input name="field-tel" type="tel" placeholder="Введите ваш номер телефона" />
-                    </label><br />
-                    
-                    <label>
-                        email:<br />
-                        <input name="field-email" type="email" placeholder="Введите вашу почту" />
-                    </label><br />
+                            <div class="mb-3">
+                                <label class="form-label">Телефон:</label>
+                                <input type="tel" class="form-control" name="field-tel" placeholder="Введите ваш номер телефона">
+                            </div>
 
-                    <label>
-                        Дата рождения:<br />
-                        <input name="field-date" value="2019-08-13" type="date" />
-                    </label><br />
+                            <div class="mb-3">
+                                <label class="form-label">email:</label>
+                                <input type="email" class="form-control" name="field-email" placeholder="Введите вашу почту">
+                            </div>
 
-                    Пол:<br />
-                    <label><input type="radio" checked="checked" name="radio-group-1" value="Male" />
-                        Мужской</label>
-                    <label><input type="radio" name="radio-group-1" value="Female" />
-                        Женский</label><br />
+                            <div class="mb-3">
+                                <label class="form-label">Дата рождения:</label>
+                                <input type="date" class="form-control" name="field-date" value="2019-08-13">
+                            </div>
 
-                    <label>
-                        Любимый язык программирования:
-                        <br />
-                        <select name="field-name-4[]" multiple="multiple">
-                            <option value="C++">С++</option>
-                            <option value="C#" selected="selected">С#</option>
-                            <option value="Python" selected="selected">Python</option>
-                            <option value="C" selected="selected">C</option>
-                        </select>
-                    </label><br />
+                            <div class="mb-3">
+                                <label class="form-label">Пол:</label>
+                                <div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" checked="checked" name="radio-group-1" value="Male">
+                                        <label class="form-check-label">Мужской</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="radio-group-1" value="Female">
+                                        <label class="form-check-label">Женский</label>
+                                    </div>
+                                </div>
+                            </div>
 
-                    <label>
-                        Биография:<br />
-                        <textarea name="field-name-2">О себе</textarea>
-                    </label><br />
+                            <div class="mb-3">
+                                <label class="form-label">Любимый язык программирования:</label>
+                                <select class="form-select" name="field-name-4[]" multiple>
+                                    <option value="C++">С++</option>
+                                    <option value="C#" selected>С#</option>
+                                    <option value="Python" selected>Python</option>
+                                    <option value="C" selected>C</option>
+                                </select>
+                            </div>
 
-                    <label><input type="checkbox" checked="checked" name="check-1" />
-                        С контрактом ознакомлен(а)</label><br />
+                            <div class="mb-3">
+                                <label class="form-label">Биография:</label>
+                                <textarea class="form-control" name="field-name-2">О себе</textarea>
+                            </div>
 
-                    <input type="submit" value="Сохранить" />
-                </form>
-            </section>
+                            <div class="mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" checked="checked" name="check-1">
+                                    <label class="form-check-label">С контрактом ознакомлен(а)</label>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Сохранить</button>
+                        </form>
+                    </div>
+                </section>
+            </div>
         </div>
     </main>
 
-    <footer id="site-footer">
+    <section class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h2 class="card-title h4 mb-4 text-center">Калькулятор стоимости заказа</h2>
+
+                        <form id="calculator-form">
+                            <div class="mb-3">
+                                <label for="product" class="form-label">Выберите товар:</label>
+                                <select class="form-select" id="product" required>
+                                    <option value="" disabled selected>-- Выберите товар --</option>
+                                    <option value="2500">Ноутбук - 2500 руб.</option>
+                                    <option value="1500">Смартфон - 1500 руб.</option>
+                                    <option value="800">Наушники - 800 руб.</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="quantity" class="form-label">Количество товара:</label>
+                                <input type="text"
+                                       class="form-control"
+                                       id="quantity"
+                                       placeholder="Введите количество"
+                                       required>
+                                <div id="quantity-error" class="invalid-feedback" style="display: none;">
+                                    Введите целое положительное число
+                                </div>
+                            </div>
+
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary">Рассчитать стоимость</button>
+                            </div>
+                        </form>
+
+                        <div id="result" class="mt-4" style="display: none;">
+                            <div class="alert alert-success">
+                                <h5 class="alert-heading">Результат:</h5>
+                                <p class="mb-0" id="result-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4 mt-5">
         <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2025. Все права защищены.</p>
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025. Все права защищены.</p>
             </div>
         </div>
     </footer>
+
+    <script src="calculator.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
