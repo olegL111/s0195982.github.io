@@ -1,209 +1,40 @@
-.content-wrapper {
-    display: flex;
-    flex-direction: column;
-}
-
-.links-section {
-    order: 1;
-}
-
-.table-section {
-    order: 2;
-}
-
-.form-section {
-    order: 3;
-}
-
-/* Медиа-запрос для смартфонов */
-@media (max-width: 768px) {
-    .content-wrapper {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .table-section {
-        order: 1;
-    }
-    
-    .links-section {
-        order: 2;
-    }
-    
-    .form-section {
-        order: 3;
-    }
-    
-    .container {
-        padding: 0 15px;
-    }
-    
-    #tech-table {
-        font-size: 0.8rem;
-    }
-    
-    .marked-list,
-    .numbered-list {
-        padding-left: 20px !important;
-    }
-}
-
-.marked-list {
-    list-style-type: disc !important;
-    padding-left: 40px !important;
-    margin: 20px 0;
-}
-
-.numbered-list {
-    list-style-type: decimal !important;
-    padding-left: 40px !important;
-    margin: 20px 0;
-}
-
-.marked-list li,
-.numbered-list li {
-    margin: 10px 0;
-    line-height: 1.5;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
-}
-
-.container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    flex-direction: column;
-}
-
-#site-header {
-    background: linear-gradient(135deg, #2c3e50, #34495e);
-    color: white;
-    padding: 20px 0;
-    width: 100%;
-}
-
-.header-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo-section {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
+/* Mobile First - минимальные кастомные стили */
 .logo {
-    width: 50px;
-    height: 50px;
-    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
     object-fit: cover;
 }
 
-#site-title {
-    font-size: 2rem;
-    font-weight: bold;
+/* Улучшение читаемости на мобильных */
+@media (max-width: 768px) {
+    .table-responsive {
+        font-size: 0.875rem;
+    }
 }
 
-#main-nav {
-    background: #34495e;
-    width: 100%;
-    border-bottom: 3px solid #2980b9;
+/* Кастомные цвета для ссылок */
+a {
+    color: #0d6efd;
+    transition: color 0.15s ease-in-out;
 }
 
-.nav-menu {
-    list-style: none;
-	display: flex;
-    flex-direction: column;
+    a:hover {
+        color: #0a58ca;
+    }
+
+/* Плавные переходы для карточек */
+.card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
-.nav-menu li {
-    margin: 0;
-}
+    .card:hover {
+        transform: translateY(-2px);
+    }
 
-.nav-menu a {
-    display: block;
-    padding: 15px 25px;
-    color: white;
-    text-decoration: none;
-}
-
-.nav-menu a:hover {
-    background: #2980b9;
-}
-
-#content {
-    background: white;
-    padding: 30px;
-    margin: 20px 0;
-    border-radius: 8px;
-}
-
-#table{
-	order:1
-}
-
-#list-refs{
-	order: 2;
-}
-
-#form {
-	order: 3;
-}
-
-#tech-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-}
-
-#tech-table th {
-    background: #34495e;
-    color: white;
-    padding: 12px;
-    text-align: left;
-}
-
-#tech-table td {
-    padding: 10px 12px;
-    border: 1px solid #ddd;
-}
-
-#tech-table tr.even {
-    background-color: #f8f9fa;
-}
-
-#tech-table tr.odd {
-    background-color: #ffffff;
-}
-
-#site-footer {
-    background: #2c3e50;
-    color: white;
-    padding: 30px 0;
-    width: 100%;
-    margin-top: 40px;
-}
-
-.footer-content {
-    text-align: center;
-}
-
-@media screen and (min-width: 800px) {
-  .nav-menu {
-    flex-direction: row;
-  }
+/* Простые стили для калькулятора */
+#quantity-error {
+    color: #dc3545;
+    font-size: 0.875em;
+    margin-top: 0.25rem;
 }
