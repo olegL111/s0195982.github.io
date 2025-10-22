@@ -257,7 +257,6 @@
         </div>
     </section>
 
-    <!-- Калькулятор стоимости услуги -->
     <section class="container my-5">
         <div class="row justify-content-center">
             <div class="col-12 col-md-8 col-lg-6">
@@ -266,7 +265,6 @@
                         <h2 class="card-title h4 mb-4 text-center">Калькулятор стоимости услуги</h2>
 
                         <form id="service-calculator">
-                            <!-- Количество -->
                             <div class="mb-3">
                                 <label for="service-quantity" class="form-label">Количество:</label>
                                 <input type="number"
@@ -276,7 +274,6 @@
                                        min="1">
                             </div>
 
-                            <!-- Тип услуги (радиокнопки) -->
                             <div class="mb-3">
                                 <label class="form-label">Тип услуги:</label>
                                 <div class="form-check">
@@ -299,7 +296,6 @@
                                 </div>
                             </div>
 
-                            <!-- Опции услуги (селект) -->
                             <div class="mb-3" id="options-section" style="display: none;">
                                 <label for="service-options" class="form-label">Опции услуги:</label>
                                 <select class="form-select" id="service-options">
@@ -309,7 +305,6 @@
                                 </select>
                             </div>
 
-                            <!-- Свойства услуги (чекбокс) -->
                             <div class="mb-3" id="properties-section" style="display: none;">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" id="service-property" value="800">
@@ -319,12 +314,46 @@
                                 </div>
                             </div>
 
-                            <!-- Результат -->
                             <div class="mt-4 p-3 bg-light rounded">
                                 <h5 class="mb-2">Итоговая стоимость:</h5>
                                 <div class="h4 text-primary" id="total-price">1000 ₽</div>
                             </div>
                         </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <h2 class="text-center mb-4">Галерея изображений</h2>
+
+                <div class="gallery-slider">
+                    <div class="gallery-slide">
+                        <img src="https://i.pinimg.com/originals/aa/30/77/aa3077e18cb8bae18755bbabefc32d9c.jpg" alt="Горы" class="gallery-image">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="https://cdn.culture.ru/images/1c645038-d5ff-5337-a6ee-c9ac2df5bf88" alt="Лес" class="gallery-image">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="https://i.pinimg.com/736x/9c/86/05/9c8605f059819166f55aa01c93c897a7.jpg" alt="Озеро" class="gallery-image">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=400&h=300&fit=crop" alt="Водопад" class="gallery-image">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=300&fit=crop" alt="Лесная тропа" class="gallery-image">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=400&h=300&fit=crop" alt="Туман" class="gallery-image">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="https://images.unsplash.com/photo-1476820865390-c52aeebb9891?w=400&h=300&fit=crop" alt="Закат" class="gallery-image">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=400&h=300&fit=crop" alt="Осень" class="gallery-image">
                     </div>
                 </div>
             </div>
@@ -339,6 +368,12 @@
         </div>
     </footer>
 
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="gallery-slick.js" defer></script>
     <script src="service-calculator.js" defer></script>
     <script src="calculator.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
