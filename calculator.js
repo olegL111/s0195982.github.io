@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+﻿document.addEventListener('DOMContentLoaded', function () {
 
     const form = document.getElementById('calculator-form');
     const productSelect = document.getElementById('product');
