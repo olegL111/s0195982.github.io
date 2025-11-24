@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Кнопка открытия формы -->
+    <section class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <button class="btn btn-primary btn-lg" onclick="openFeedbackForm()">
+                    Обратная связь
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Попап с формой -->
+    <div id="feedbackModal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Обратная связь</h3>
+                <button class="modal-close" onclick="closeFeedbackForm()">&times;</button>
+            </div>
+
+            <form id="feedbackForm">
+                <div class="modal-body">
+                    <!-- ФИО -->
+                    <div class="form-group">
+                        <label for="fullName">ФИО *</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <!-- Телефон -->
+                    <div class="form-group">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+
+                    <!-- Организация -->
+                    <div class="form-group">
+                        <label for="organization">Организация</label>
+                        <input type="text" id="organization" name="organization">
+                    </div>
+
+                    <!-- Сообщение -->
+                    <div class="form-group">
+                        <label for="message">Сообщение *</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+
+                    <!-- Чекбокс согласия -->
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="agreement" name="agreement" required>
+                        <label for="agreement">
+                            Согласен с политикой обработки персональных данных *
+                        </label>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Отправить</button>
+                    <button type="button" class="btn btn-secondary" onclick="closeFeedbackForm()">Отмена</button>
+                </div>
+            </form>
+
+            <!-- Сообщения об успехе/ошибке -->
+            <div id="formMessage" class="form-message"></div>
+        </div>
+    </div>
+
+    <script src="feedback-form.js" defer></script>
+</body>
+</html>
+
